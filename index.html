@@ -8,27 +8,32 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/desktop.css">
-    <link rel="stylesheet" href="css/tablet_portrait.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
 </head>
 <body>
 <header class="header">
     <div class="container header_content">
         <div class="header_logo">
-            <img src="images/logo.svg" alt="logo">
+            <a href="#">
+                <img src="images/logo.svg" alt="logo">
+            </a>
         </div>
         <button class="header_hamburger">
             <img src="images/hamburger.svg" alt="hamburger">
         </button>
     </div>
 </header>
-<section>
+
+<div id="owl-example" class="owl-carousel  owl-theme">
     <div class="intro">
         <div class="intro_main_text">
             <p>МЫСЛИ <br>ГЛОБАЛЬНО</p>
@@ -39,32 +44,73 @@
                 результат наших клиентов в маркетинге, продажах и управлении
             </p>
         </div>
-        <a href="#" class="intro_button">
+        <button class="intro_button">
             ПОДРОБНЕЕ
-        </a>
-    </div>
-</section>
-<section>
-    <div class="promo">
-        <div class="container promo_content">
-            <div class="promo_text">
-                <p class="promo_text_tagline">
-                    Вы полюбите нас с первой встречи!
-                </p>
-                <p class="promo_text_describe">
-                    Мы предоставляем комплексный подход к продвижению компании,<br>
-                    продуктов и услуг в цифровой сфере.
-                </p>
-            </div>
-            <button class="promo_button">
-                ПЕРЕЗВОНИТЕ МНЕ
-            </button>
+        </button>
+        <div class="intro_navigation">
+            <button type="button" class="btn prev"><</button>
+            <button type="button" class="btn next">></button>
         </div>
     </div>
-</section>
-<section>
-    <div class="services">
-        <div class="services_content">
+    <div class="intro">
+        <div class="intro_main_text">
+            <p>СЛУШАЙСЯ <br>МАМУ</p>
+        </div>
+        <div class="intro_text">
+            <p>
+                Di Gі - это диджитал агентство полного цикла, направленное на самый лучший <br>
+                результат наших клиентов в маркетинге, продажах и управлении
+            </p>
+        </div>
+        <button class="intro_button">
+            ПОДРОБНЕЕ
+        </button>
+        <div class="intro_navigation">
+            <button type="button" class="btn prev"><</button>
+            <button type="button" class="btn next">></button>
+        </div>
+    </div>
+    <div class="intro">
+        <div class="intro_main_text">
+            <p>ХОРОШО <br>КУШАЙ</p>
+        </div>
+        <div class="intro_text">
+            <p>
+                Di Gі - это диджитал агентство полного цикла, направленное на самый лучший <br>
+                результат наших клиентов в маркетинге, продажах и управлении
+            </p>
+        </div>
+        <button class="intro_button">
+            ПОДРОБНЕЕ
+        </button>
+        <div class="intro_navigation">
+            <button type="button" class="btn prev"><</button>
+            <button type="button" class="btn next">></button>
+        </div>
+    </div>
+
+</div>
+
+<div class="promo">
+    <div class="container promo_content">
+        <div class="promo_text">
+            <p class="promo_text_tagline">
+                Вы полюбите нас с первой встречи!
+            </p>
+            <p class="promo_text_describe">
+                Мы предоставляем комплексный подход к продвижению компании,<br>
+                продуктов и услуг в цифровой сфере.
+            </p>
+        </div>
+        <button class="promo_button">
+            ПЕРЕЗВОНИТЕ МНЕ
+        </button>
+    </div>
+</div>
+
+<div class="services">
+    <div class="services_content">
+        <div class="text_container">
             <div class="services_content_text">
                 <p class="services_content_text_title">
                     Сервис
@@ -79,301 +125,294 @@
                     производительности
                 </p>
             </div>
-            <div class="services_content_item">
+        </div>
+        <div class="services_content_item">
+            <div>
                 <div>
                     <div>
-                        <div>
-                            <img src="images/strategy.png" alt="strategy">
-                            <p>СТРАТЕГИЯ</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
+                        <img src="images/strategy.png" alt="strategy">
+                        <p>СТРАТЕГИЯ</p>
                     </div>
-                </div>
-                <div>
                     <div>
-                        <div>
-                            <img src="images/analyze.png" alt="analyze">
-                            <p>АНАЛИЗ</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/social.png" alt="social">
-                            <p>СОЦ СЕТИ</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/development.png" alt="development">
-                            <p>РАЗВИТИЕ</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/content.png" alt="content">
-                            <p>КОНТЕНТ</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/uiux.png" alt="uiux">
-                            <p>ДИЗАЙН UX</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/advertising.png" alt="advertising">
-                            <p>ТАРГЕТИРОВАННАЯ<br>
-                                РЕКЛАМА</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <img src="images/product.png" alt="product">
-                            <p>ПРОДУКТ</p>
-                        </div>
-                        <div>
-                            <p>
-                                Создадим уникальный <br> и удобный дизайн.
-                            </p>
-                            <a href="#">
-                                ПОДРОБНЕЕ →
-                            </a>
-                        </div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
                     </div>
                 </div>
             </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/analyze.png" alt="analyze">
+                        <p>АНАЛИЗ</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/social.png" alt="social">
+                        <p>СОЦ СЕТИ</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/development.png" alt="development">
+                        <p>РАЗВИТИЕ</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/content.png" alt="content">
+                        <p>КОНТЕНТ</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/uiux.png" alt="uiux">
+                        <p>ДИЗАЙН UX</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/advertising.png" alt="advertising">
+                        <p>ТАРГЕТИРОВАННАЯ<br>
+                            РЕКЛАМА</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="images/product.png" alt="product">
+                        <p>ПРОДУКТ</p>
+                    </div>
+                    <div>
+                        <p>
+                            Создадим уникальный <br> и удобный дизайн.
+                        </p>
+                        <a href="#">
+                            ПОДРОБНЕЕ →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        </div>
     </div>
-</section>
-<section>
-    <div class="recent_work">
-        <div class="container recent_work_content">
-            <p class="recent_work_content_title">
-                Наши Проекты
-            </p>
-            <hr class="recent_work_content_separator">
-            <div class="recent_work_content_portfolio">
-                <div class="recent_work_content_portfolio_card">
-                    <img src="images/portfolio-1.png" alt="portfolio">
-                    <p>Lalique бутик</p>
-                    <div class="recent_work_content_portfolio_hidden">
-                        <a href="#">
-                            <img src="images/info.svg" alt="info">
-                        </a>
-                        <a href="#">
-                            <img src="images/search.svg" alt="search">
-                        </a>
-                    </div>
-                </div>
-                <div class="recent_work_content_portfolio_card">
-                    <img src="images/portfolio-2.png" alt="portfolio">
-                    <p>Строительство домов</p>
-                    <div class="recent_work_content_portfolio_hidden">
-                        <a href="#">
-                            <img src="images/info.svg" alt="info">
-                        </a>
-                        <a href="#">
-                            <img src="images/search.svg" alt="search">
-                        </a>
-                    </div>
-                </div>
-                <div class="recent_work_content_portfolio_card">
-                    <img src="images/portfolio-3.png" alt="portfolio">
-                    <p>Кофейня</p>
-                    <div class="recent_work_content_portfolio_hidden">
-                        <a href="#">
-                            <img src="images/info.svg" alt="info">
-                        </a>
-                        <a href="#">
-                            <img src="images/search.svg" alt="search">
-                        </a>
-                    </div>
-                </div>
-                <div class="recent_work_content_portfolio_card">
-                    <img src="images/portfolio-4.png" alt="portfolio">
-                    <p>Уникальные туры</p>
-                    <div class="recent_work_content_portfolio_hidden">
-                        <a href="#">
-                            <img src="images/info.svg" alt="info">
-                        </a>
-                        <a href="#">
-                            <img src="images/search.svg" alt="search">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="video_block">
-        <div class="container video_block_content">
-            <div class="video_block_content_image">
-                <img src="images/video.png" alt="video">
-            </div>
-            <div class="video_block_content_text">
-                <p class="video_block_content_text_title">
-                    Команда
-                </p>
-                <hr class="video_block_content_separate">
-                <p class="video_block_content_text_describe">
-                    Наша команда - это наша самая большая ценность.
-                    Мы трудились, чтобы собрать группу экспертов,
-                    чьи навыки дополняют друг друга.
-                    У членов нашей команды разные истории, но мы разделяем общую
-                    страсть к идеалу. Мы верим, чтобы оставаться
-                    профессионалом, нужно развиваться,
-                    поэтому мы постоянно ищем способы, как стать лучше
-                    в том, что мы делаем.
-                </p>
-                <button class="video_block_content_text_button">
-                    СМОТРЕТЬ ВИДЕО
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-<section>
-    <div class="latest_news">
-        <div class="container latest_news_content">
-            <div class="latest_news_content_text">
-                <p class="latest_news_content_text_title">
-                    Последние Новости
-                </p>
-                <hr class="latest_news_content_text_separator">
-            </div>
-            <div class="latest_news_content_images">
-                <div class="item">
-                    <img src="images/news-1.png" alt="news">
-                    <p class="item_text">3Д в брендинге</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/news-2.png" alt="news">
-                    <p class="item_text">Контекстная реклама</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/mask.png" alt="news">
-                    <p class="item_text">Графика</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/news-4.png" alt="news">
-                    <p class="item_text">Корпоративная культура</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/news-5.png" alt="news">
-                    <p class="item_text">Уникальный дизайн</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/news-6.png" alt="news">
-                    <p class="item_text">Взгляд со стороны</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/news-7.png" alt="news">
-                    <p class="item_text">Соц сети и их польза</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
-                <div class="item">
-                    <img src="images/news-8.png" alt="news">
-                    <p class="item_text">Эксклюзивность</p>
-                    <img src="images/info-white.svg" alt="info">
-                </div>
+</div>
 
-<!--                <span class="item break"></span>-->
-<!--                <span class="item break"></span>-->
-<!--                <span class="item break"></span>-->
+<div class="recent_work">
+    <div class="container recent_work_content">
+        <p class="recent_work_content_title">
+            Наши Проекты
+        </p>
+        <hr class="recent_work_content_separator">
+        <div class="recent_work_content_portfolio">
+            <div class="recent_work_content_portfolio_card">
+                <img src="images/portfolio-1.png" alt="portfolio">
+                <p>Lalique бутик</p>
+                <div class="recent_work_content_portfolio_hidden">
+                    <a href="#">
+                        <img src="images/info.svg" alt="info">
+                    </a>
+                    <a href="#">
+                        <img src="images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+            <div class="recent_work_content_portfolio_card">
+                <img src="images/portfolio-2.png" alt="portfolio">
+                <p>Строительство домов</p>
+                <div class="recent_work_content_portfolio_hidden">
+                    <a href="#">
+                        <img src="images/info.svg" alt="info">
+                    </a>
+                    <a href="#">
+                        <img src="images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+            <div class="recent_work_content_portfolio_card">
+                <img src="images/portfolio-3.png" alt="portfolio">
+                <p>Кофейня</p>
+                <div class="recent_work_content_portfolio_hidden">
+                    <a href="#">
+                        <img src="images/info.svg" alt="info">
+                    </a>
+                    <a href="#">
+                        <img src="images/search.svg" alt="search">
+                    </a>
+                </div>
+            </div>
+            <div class="recent_work_content_portfolio_card">
+                <img src="images/portfolio-4.png" alt="portfolio">
+                <p>Уникальные туры</p>
+                <div class="recent_work_content_portfolio_hidden">
+                    <a href="#">
+                        <img src="images/info.svg" alt="info">
+                    </a>
+                    <a href="#">
+                        <img src="images/search.svg" alt="search">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</section>
-<section>
-    <div class="testimonial">
-        <div class="container testimonial_content">
-            <img class="testimonial_content_img" src="images/quote.svg" alt="quote">
-            <p class="testimonial_content_quote">
-                Если нужно создавать либо повышать имидж компании,<br>
-                то <strong>диджитал-маркетинг</strong> является наиболее подходящим
+</div>
+
+<div class="video_block">
+    <div class="container video_block_content">
+        <div class="video_block_content_image">
+            <img src="images/video.png" alt="video">
+        </div>
+        <div class="video_block_content_text">
+            <p class="video_block_content_text_title">
+                Команда
             </p>
-            <p class="testimonial_content_author">
-                - Маргарита Акулич
+            <hr class="video_block_content_separate">
+            <p class="video_block_content_text_describe">
+                Наша команда - это наша самая большая ценность.
+                Мы трудились, чтобы собрать группу экспертов,
+                чьи навыки дополняют друг друга.
+                У членов нашей команды разные истории, но мы разделяем общую
+                страсть к идеалу. Мы верим, чтобы оставаться
+                профессионалом, нужно развиваться,
+                поэтому мы постоянно ищем способы, как стать лучше
+                в том, что мы делаем.
             </p>
+            <button class="video_block_content_text_button">
+                СМОТРЕТЬ ВИДЕО
+            </button>
         </div>
     </div>
-</section>
+</div>
+
+<div class="latest_news">
+    <div class="container latest_news_content">
+        <div class="latest_news_content_text">
+            <p class="latest_news_content_text_title">
+                Последние Новости
+            </p>
+            <hr class="latest_news_content_text_separator">
+        </div>
+        <div class="latest_news_content_images">
+            <div class="latest_news_item">
+                <img src="images/news-1.png" alt="news">
+                <p class="latest_news_name">3Д в брендинге</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/news-2.png" alt="news">
+                <p class="latest_news_name">Контекстная реклама</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/mask.png" alt="news">
+                <p class="latest_news_name">Графика</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/news-4.png" alt="news">
+                <p class="latest_news_name">Корпоративная культура</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/news-5.png" alt="news">
+                <p class="latest_news_name">Уникальный дизайн</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/news-6.png" alt="news">
+                <p class="latest_news_name">Взгляд со стороны</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/news-7.png" alt="news">
+                <p class="latest_news_name">Соц сети и их польза</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+            <div class="latest_news_item">
+                <img src="images/news-8.png" alt="news">
+                <p class="latest_news_name">Эксклюзивность</p>
+                <img src="images/info-white.svg" alt="info">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="testimonial">
+    <div class="container testimonial_content">
+        <img class="testimonial_content_img" src="images/quote.svg" alt="quote">
+        <p class="testimonial_content_quote">
+            Если нужно создавать либо повышать имидж компании,<br>
+            то <strong>диджитал-маркетинг</strong> является наиболее подходящим
+        </p>
+        <p class="testimonial_content_author">
+            - Маргарита Акулич
+        </p>
+    </div>
+</div>
+
 <footer>
     <div class="footer_contact">
         <div class="container footer_contact_content">
@@ -383,16 +422,24 @@
             </p>
             <div class="footer_contact_content_social">
                 <div class="footer_contact_content_social_item">
-                    <img src="images/facebook.svg" alt="facebook">
+                    <a href="https://www.facebook.com">
+                        <img src="images/facebook.svg" alt="facebook">
+                    </a>
                 </div>
                 <div class="footer_contact_content_social_item">
-                    <img src="images/google.svg" alt="google">
+                    <a href="https://www.google.com.ua">
+                        <img src="images/google.svg" alt="google">
+                    </a>
                 </div>
                 <div class="footer_contact_content_social_item">
-                    <img src="images/twitter.svg" alt="twitter">
+                    <a href="https://twitter.com">
+                        <img src="images/twitter.svg" alt="twitter">
+                    </a>
                 </div>
                 <div class="footer_contact_content_social_item">
-                    <img src="images/pinterest.svg" alt="pinterest">
+                    <a href="https://www.pinterest.com">
+                        <img src="images/pinterest.svg" alt="pinterest">
+                    </a>
                 </div>
             </div>
             <div class="footer_contact_content_widgets">
@@ -449,5 +496,6 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>
